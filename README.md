@@ -2,7 +2,7 @@
 
 ## 👨‍💻 About Me
 Hi, I am Aditya Yadav  
-💻 IT Student | Aspiring Full Stack Developer  
+💻 IT Student |  Full Stack Developer  
 
 ---
 
