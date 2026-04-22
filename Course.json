@@ -1,0 +1,179 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "e1e053c7-9da9-44f4-90d0-9a0a5840d336",
+        "name": "jPDB"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Service",
+            "description": "CRUD",
+            "id": "813ad653-2d1b-4328-84f1-d3a54cb85a4e",
+            "name": "CRUD"
+          },
+          "children": [
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90935274|-31949235970946401|90958579\",\n    \"cmd\": \"GET\",\n    \"dbName\": \"Student\",\n    \"rel\": \"Emp-Rel\",\n    \"jsonStr\":{\n        \"name\": \"Aditya\"\n    }\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/irl"
+                },
+                "id": "4dd6bf19-1f9b-40f8-9b8e-faf0020aa53b",
+                "name": "GET",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90935274|-31949235970946401|90958579\",\n    \"cmd\": \"PUT\",\n    \"dbName\": \"Student\",\n    \"rel\": \"Emp-Rel\",\n    \"jsonStr\": {\n        \"id\": \"1\",\n        \"name\": \"Aditya\",\n        \"email\": \"Aditya@gmail.com\",\n        \"mobileno\": \"1234567890\",\n      \"City\":\"Mumbai\"\n    }\n}"
+                },
+                "uri": {
+                  "scheme": {
+                    "secure": true,
+                    "name": "https",
+                    "version": "V11"
+                  }
+                },
+                "id": "e94fb52b-a589-42f2-ac6d-e4a157cfc640",
+                "name": "PUT",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90935274|-31949235970946401|90958579\",\n    \"cmd\": \"UPDATE\",\n    \"dbName\": \"Student\",\n    \"rel\": \"Emp-Rel\",\n    \"jsonStr\": {\n       \"3\":{\n        \"full_name\": \"Gargee Mishra\",\n        \"email_address\":\"gargee@gmail.com\",\n        \"mobile_number\": 7098162348\n\n      },\n       \"6\":{\n        \"full_name\":\"Kanishk Mishra\",\n        \"email_address\":\"kanishk@gmail.com\",\n        \"mobile_number\": 9000876578\n      },\n       \"5\":{\n        \"full_name\":\"Sulbha Mishra\",\n        \"email_address\":\"sulbha@gmail.com\"\n      }\n   }\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "d91df673-509d-4a7c-94e8-e49619fe55b5",
+                "name": "REMOVE",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            },
+            {
+              "entity": {
+                "type": "Request",
+                "method": {
+                  "requestBody": true,
+                  "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                  "name": "POST"
+                },
+                "body": {
+                  "formBody": {
+                    "overrideContentType": true,
+                    "encoding": "application/x-www-form-urlencoded",
+                    "items": []
+                  },
+                  "bodyType": "Text",
+                  "textBody": "{\n    \"token\": \"90935274|-31949235970946401|90958579\",\n    \"cmd\": \"UPDATE\",\n    \"dbName\": \"Student\",\n    \"rel\": \"Emp-Rel\",\n    \"jsonStr\": {\n       \"3\":{\n        \"full_name\": \"Gargee Mishra\",\n        \"email_address\":\"gargee@gmail.com\",\n        \"mobile_number\": 7098162348\n\n      },\n       \"6\":{\n        \"full_name\":\"Kanishk Mishra\",\n        \"email_address\":\"kanishk@gmail.com\",\n        \"mobile_number\": 9000876578\n      },\n       \"5\":{\n        \"full_name\":\"Sulbha Mishra\",\n        \"email_address\":\"sulbha@gmail.com\"\n      }\n   }\n}"
+                },
+                "uri": {
+                  "query": {
+                    "delimiter": "&",
+                    "items": []
+                  },
+                  "scheme": {
+                    "name": "http",
+                    "version": "V11"
+                  },
+                  "host": "api.login2explore.com:5577",
+                  "path": "/api/iml"
+                },
+                "id": "e52b7971-6d10-425d-a313-7e1508b5e396",
+                "name": "UPDATE",
+                "headers": [
+                  {
+                    "enabled": true,
+                    "name": "Content-Type",
+                    "value": "application/json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
